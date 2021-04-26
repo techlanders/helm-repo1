@@ -22,3 +22,42 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.20.0"
+annotations:
+  artifacthub.io/changes: |
+    - Added cool feature
+    - Fixed minor bug    
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/images: |
+    - name: tech-img1
+      image: repo/img1:1.0.0
+      whitelisted: true    
+  artifacthub.io/crds: |
+    - kind: MyKind
+      version: v1
+      name: mykind
+      displayName: My Kind
+      description: Some nice description    
+  artifacthub.io/crdsExamples: |
+    - apiVersion: v1
+      kind: MyKind
+      metadata:
+        name: mykind
+      spec:
+        replicas: 1    
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: link1
+      url: https://link1.url
+    - name: link2
+      url: https://link2.url    
+  artifacthub.io/maintainers: |
+    - name: user1
+      email: gagandeep.singh@techlanders.com
+    - name: user2
+      email: vedant@techlanders.com
+  artifacthub.io/operator: "true"
+  artifacthub.io/operatorCapabilities: Basic Install
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+    - url: https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack 
